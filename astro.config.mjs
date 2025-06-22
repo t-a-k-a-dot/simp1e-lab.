@@ -9,10 +9,13 @@ import expressiveCode from 'astro-expressive-code'
 import { remarkPlugins, rehypePlugins } from './plugins'
 import { SITE } from './src/config'
 
+import netlify from '@astrojs/netlify';
+
 export default defineConfig({
   site: SITE.website,
   base: SITE.base,
   prefetch: true,
+
   vite: {
     plugins: [tailwindcss()],
     envDir: '.',
@@ -20,10 +23,14 @@ export default defineConfig({
       chunkSizeWarningLimit: 1200,
     },
   },
+
   markdown: {
     syntaxHighlight: false,
     remarkPlugins,
     rehypePlugins,
   },
+
   integrations: [sitemap(), robotsTxt(), react(), expressiveCode(), mdx()],
+  output: 'static'
+  adapter: netlify(),
 })

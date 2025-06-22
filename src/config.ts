@@ -1,11 +1,11 @@
 import type { GithubConfig, Link, PostConfig, Project, ProjectConfig, Site, SkillsShowcaseConfig, SocialLink, TagsConfig } from '~/types'
 
 export const SITE: Site = {
-  title: 'Litos',
-  description: 'Litos is a blog theme built with Astro.js and Dnzzk2.',
-  website: 'https://litos.vercel.app/',
+  title: 'simp1e-lab.',
+  description: 'Very simple lab experiment records',
+  website: 'https://simp1e-lab.com/',
   base: '/',
-  author: 'Dnzzk2',
+  author: 'taka.',
   ogImage: '/og-image.jpg',
 }
 
@@ -14,25 +14,35 @@ export const HEADER_LINKS: Link[] = [
     name: 'Posts',
     url: '/posts',
   },
+  /* 2025/06/22
   {
     name: 'Projects',
     url: '/projects',
+  },
+  2025/06/22 */
+  {
+    name: 'Tags',
+    url: '/tags',
   },
 ]
 
 export const FOOTER_LINKS: Link[] = [
+  /* 2025/06/22
   {
     name: 'Readme',
     url: '/',
   },
+  2025/06/22 */
   {
     name: 'Posts',
     url: '/posts',
   },
+  /* 2025/06/22
   {
     name: 'Projects',
     url: '/projects',
   },
+  2025/06/22 */
   {
     name: 'Tags',
     url: '/tags',
@@ -40,7 +50,9 @@ export const FOOTER_LINKS: Link[] = [
 ]
 
 // get icon https://icon-sets.iconify.design/
+
 export const SOCIAL_LINKS: SocialLink[] = [
+/* 2025/06/22
   {
     name: 'github',
     url: 'https://github.com/yourname',
@@ -56,7 +68,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: 'https://space.bilibili.com/yourSpaceId',
     icon: 'icon-[ri--bilibili-fill]',
   },
-]
+2025/06/22 */
+  ]
 
 /**
  * SkillsShowcase 配置接口 / SkillsShowcase configuration type
@@ -75,20 +88,16 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
       direction: 'left',
       skills: [
         {
-          name: 'JavaScript',
-          icon: 'icon-[mdi--language-javascript]',
+          name: 'VMware Cloud Foundation',
+          icon: 'icon-[carbon--logo-vmware-alt]',
         },
         {
-          name: 'CSS',
-          icon: 'icon-[mdi--language-css3]',
+          name: 'Windows',
+          icon: 'icon-[mdi--microsoft-windows]',
         },
         {
-          name: 'HTML',
-          icon: 'icon-[mdi--language-html5]',
-        },
-        {
-          name: 'TypeScript',
-          icon: 'icon-[mdi--language-typescript]',
+          name: 'Linux',
+          icon: 'icon-[ant-design--linux-outlined]',
         },
       ],
     },
@@ -96,28 +105,16 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
       direction: 'right',
       skills: [
         {
-          name: 'Astro',
-          icon: 'icon-[lineicons--astro]',
+          name: 'Amazon Web Services',
+          icon: 'icon-[flowbite--aws-solid]',
         },
         {
-          name: 'Node.js',
-          icon: 'icon-[mdi--nodejs]',
+          name: 'Google Cloud Platform',
+          icon: 'icon-[arcticons--google-cloud]',
         },
         {
-          name: 'React',
-          icon: 'icon-[mdi--react]',
-        },
-        {
-          name: 'Next.js',
-          icon: 'icon-[devicon--nextjs]',
-        },
-        {
-          name: 'Tailwind CSS',
-          icon: 'icon-[mdi--tailwind]',
-        },
-        {
-          name: 'Iconify',
-          icon: 'icon-[line-md--iconify2-static]',
+          name: 'Datadog',
+          icon: 'icon-[simple-icons--datadog]',
         },
       ],
     },
@@ -125,20 +122,16 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
       direction: 'left',
       skills: [
         {
-          name: 'Ubuntu',
-          icon: 'icon-[mdi--ubuntu]',
+          name: 'PowerShell',
+          icon: 'icon-[mdi--powershell]',
         },
         {
-          name: 'Git',
-          icon: 'icon-[mdi--git]',
+          name: 'HUGO',
+          icon: 'icon-[devicon-plain--hugo]',
         },
         {
-          name: 'MongoDB',
-          icon: 'icon-[lineicons--mongodb]',
-        },
-        {
-          name: 'Vercel',
-          icon: 'icon-[lineicons--vercel]',
+          name: 'Astro',
+          icon: 'icon-[lineicons--astro]',
         },
       ],
     },
@@ -153,17 +146,20 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
  * @property {boolean} TOOLTIP_ENABLED - 是否开启Tooltip功能 / Whether to enable Github Tooltip features
  */
 
+
 export const GITHUB_CONFIG: GithubConfig = {
+  // 2025/06/22 true -> false
   ENABLED: true,
-  GITHUB_USERNAME: 'Dnzzk2',
+  GITHUB_USERNAME: 'simp1e-lab-taka',
+  // 2025/06/22 true -> false
   TOOLTIP_ENABLED: true,
 }
 
 export const POSTS_CONFIG: PostConfig = {
   title: 'Posts',
-  description: 'Posts by Dnzzk2',
-  introduce: 'Here, I will share the usage instructions for this theme to help you quickly use it.',
-  author: 'Dnzzk2',
+  description: 'Posts by taka.',
+  introduce: 'View all posts from this blog here.',
+  author: 'taka.',
   homePageConfig: {
     size: 5,
     type: 'compact',
@@ -194,6 +190,7 @@ export const TAGS_CONFIG: TagsConfig = {
   introduce: 'All the tags for posts are here, you can click to filter them.',
 }
 
+/* 2025/06/22
 export const PROJECTS_CONFIG: ProjectConfig = {
   title: 'Projects',
   description: 'The examples of my projects.',
@@ -213,3 +210,4 @@ export const ProjectList: Project[] = [
     fork: 4,
   },
 ]
+2025/06/22 */
