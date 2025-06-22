@@ -148,10 +148,8 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
 
 
 export const GITHUB_CONFIG: GithubConfig = {
-  // 2025/06/22 true -> false
   ENABLED: true,
   GITHUB_USERNAME: 'simp1e-lab-taka',
-  // 2025/06/22 true -> false
   TOOLTIP_ENABLED: true,
 }
 
@@ -190,7 +188,6 @@ export const TAGS_CONFIG: TagsConfig = {
   introduce: 'All the tags for posts are here, you can click to filter them.',
 }
 
-/* 2025/06/22
 export const PROJECTS_CONFIG: ProjectConfig = {
   title: 'Projects',
   description: 'The examples of my projects.',
@@ -210,4 +207,3 @@ export const ProjectList: Project[] = [
     fork: 4,
   },
 ]
-2025/06/22 */
