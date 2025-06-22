@@ -149,7 +149,7 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
 
 export const GITHUB_CONFIG: GithubConfig = {
   ENABLED: true,
-  GITHUB_USERNAME: 'simp1e-lab-taka',
+  GITHUB_USERNAME: 't-a-k-a-dot',
   TOOLTIP_ENABLED: true,
 }
 
