@@ -31,6 +31,6 @@ export default defineConfig({
   },
 
   integrations: [sitemap(), robotsTxt(), react(), expressiveCode(), mdx()],
-  output: 'static'
+  output: 'hybrid'
   adapter: netlify(),
 })
