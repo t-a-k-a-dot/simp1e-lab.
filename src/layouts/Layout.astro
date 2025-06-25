@@ -20,6 +20,8 @@ const { title, description, image }: Props = Astro.props
 <html lang="zh-CN">
   <head>
     <Head title={`${title} | ${SITE.title}`} {description} {image} />
+    <!-- 2025/06/25 add -->
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <Header />
