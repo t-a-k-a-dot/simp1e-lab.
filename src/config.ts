@@ -170,7 +170,8 @@ export const POSTS_CONFIG: PostConfig = {
     size: 10,
     type: 'time-line',
   },
-  defaultHeroImage: '/og-image.jpg',
+  /* 2025/06/28 mod */
+  defaultHeroImage: 'og-image.png',
   defaultHeroImageAspectRatio: '16/9',
   imageDarkenInDark: true,
   readMoreText: 'Read more',
