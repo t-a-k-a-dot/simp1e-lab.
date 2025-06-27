@@ -171,7 +171,7 @@ export const POSTS_CONFIG: PostConfig = {
     type: 'time-line',
   },
   /* 2025/06/28 mod */
-  defaultHeroImage: 'og-image.png',
+  defaultHeroImage: 'og-image.jpg',
   defaultHeroImageAspectRatio: '16/9',
   imageDarkenInDark: true,
   readMoreText: 'Read more',
