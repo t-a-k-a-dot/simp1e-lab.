@@ -6,6 +6,8 @@ import { SITE } from '~/config'
 import Head from '~/components/base/Head.astro'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
+import GoogleAnalytics from '~/components/base/GoogleAnalytics.astro';
+
 
 type Props = {
   title: string
@@ -23,6 +25,7 @@ const { title, description, image }: Props = Astro.props
     <Head title={`${title} | ${SITE.title}`} {description} {image} />
     <!-- 2025/06/25 add -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <GoogleAnalytics />
   </head>
   <body>
     <Header />

@@ -8,6 +8,7 @@ import robotsTxt from 'astro-robots-txt'
 import expressiveCode from 'astro-expressive-code'
 import { remarkPlugins, rehypePlugins } from './plugins'
 import { SITE } from './src/config'
+import partytown from "@astrojs/partytown";
 
 import netlify from '@astrojs/netlify';
 
@@ -36,7 +37,13 @@ export default defineConfig({
         page !== 'https://simp1e-lab.com/privacy-policy/' &&
         page !== 'https://simp1e-lab.com/about/',
     } 
-  ), robotsTxt(), react(), expressiveCode(), mdx()],
+  ), robotsTxt(), react(), expressiveCode(), mdx(), partytown(
+    {
+      config: {
+       forward: ["dataLayer.push"],
+      },
+    }
+  )],
 
   adapter: netlify(),
 })
