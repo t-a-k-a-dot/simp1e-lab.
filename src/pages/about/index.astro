@@ -1,0 +1,26 @@
+---
+import { ABOUT_CONFIG } from '~/config'
+import Layout from '~/layouts/Layout.astro'
+
+const { title, description, introduce } = ABOUT_CONFIG
+---
+
+<Layout {title} {description}>
+  <div class="fullPage relative z-[1] py-8 pb-10 px-6 sm:px-8">
+    <h1 class="tracking-tight text-5xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent pb-1.5">{title}</h1>
+    <div class="pro text-muted-foreground text-balance">
+      <p class="mt-2">{introduce}</p>
+    </div>
+  <div class="pro text-muted-foreground text-balance">
+    <p>
+      本ブログにアクセスいただき、ありがとうございます。<br>
+      <br>
+      駆け出し IT コンサルタントの taka. と申します。<br>
+      主にTIPS、個人的な勉強内容のアウトプット、自宅ラボでの検証結果等を投稿します。<br>
+      ご覧いただいた皆様のお役に立てれば幸いです。<br>
+      <br>
+      このブログの内容は個人の見解を記載したものであり、所属組織を代表するものではありません。
+    </p>
+  </div>
+  </div>
+</Layout>

@@ -1,7 +1,7 @@
 import type { GithubConfig, Link, PostConfig, Project, ProjectConfig, Site, SkillsShowcaseConfig, SocialLink, TagsConfig } from '~/types'
 
 export const SITE: Site = {
-  title: 'simp1e-lab.',
+  title: 'SIMP1E-LAB.',
   description: 'Very simple lab experiment records',
   website: 'https://simp1e-lab.com/',
   base: '/',
@@ -23,6 +23,10 @@ export const HEADER_LINKS: Link[] = [
   {
     name: 'Tags',
     url: '/tags',
+  },
+  {
+    name: 'About',
+    url: '/about',
   },
 ]
 
@@ -46,6 +50,10 @@ export const FOOTER_LINKS: Link[] = [
   {
     name: 'Tags',
     url: '/tags',
+  },
+  {
+    name: 'About',
+    url: '/about',
   },
 ]
 
@@ -208,3 +216,10 @@ export const ProjectList: Project[] = [
     fork: 4,
   },
 ]
+
+/* 2025/06/22 add */
+export const ABOUT_CONFIG = {
+  title: 'About',
+  description: 'About this blog',
+  introduce: 'You can find out more about this blog here.',
+}
