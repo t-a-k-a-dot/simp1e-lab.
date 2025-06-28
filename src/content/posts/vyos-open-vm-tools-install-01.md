@@ -75,4 +75,4 @@ VyOS に open-vm-tools に導入する手順を備忘のため、残しておく
       
 ## 環境
 * VyOS 1.5-rolling-202501110007
-* open-vm-tools 2:12.2.0-1+deb12u2
+* open-vm-tools 2\:12.2.0-1+deb12u2
