@@ -24,16 +24,6 @@ export const HEADER_LINKS: Link[] = [
     name: 'Tags',
     url: '/tags',
   },
-  /* 2025/06/28 add */
-  {
-    name: 'Privacy Policy',
-    url: '/privacy-policy',
-  },
-  /* 2025/06/28 add */
-  {
-    name: 'About',
-    url: '/about',
-  },
 ]
 
 export const FOOTER_LINKS: Link[] = [
