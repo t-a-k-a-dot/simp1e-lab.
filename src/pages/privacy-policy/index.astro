@@ -1,0 +1,45 @@
+---
+import { PRIVACYPOLICY_CONFIG } from '~/config'
+import Layout from '~/layouts/Layout.astro'
+
+const { title, description, introduce } = PRIVACYPOLICY_CONFIG
+---
+
+<Layout {title} {description}>
+  <div class="fullPage relative z-[1] py-8 pb-10 px-6 sm:px-8">
+    <h1 class="tracking-tight text-5xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent pb-1.5">{title}</h1>
+    <div class="pro text-muted-foreground text-balance">
+      <p class="mt-2">{introduce}</p>
+    </div>
+    <span class="text-muted-foreground font-light text-xl sm:text-2xl block tracking-wide text-balance">
+      免責事項
+    </span>
+    <div class="pro text-muted-foreground">
+      <p>
+        当ブログからのリンクやバナー等で移動したサイトで提供される情報、サービス等については一切の責任を負いません。<br>
+        また当ブログのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性を保証するものではありません。<br>
+        情報が古くなっていることもございます。<br>
+        当ブログによって掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。<br><br><br>
+      </p>
+    </div>
+    <span class="text-muted-foreground font-light text-xl sm:text-2xl block tracking-wide text-balance">
+      著作権について
+    </span>
+    <div class="pro text-muted-foreground">
+      <p>
+        当ブログのコンテンツ (写真や画像、文書等) の著作権につきましては、原則として当方に帰属しており、無断転載することを禁止します。<br>
+        当ブログは著作権や肖像権の侵害を目的としたものではありません。<br>
+        著作権や肖像権に関して問題がございましたら、管理人にご連絡ください。<br>
+        迅速に対応いたします。<br><br><br>
+      </p>
+    </div>
+    <span class="text-muted-foreground font-light text-xl sm:text-2xl block tracking-wide text-balance">
+      リンクについて
+    </span>
+    <div class="pro text-muted-foreground">
+      <p>
+        当ブログは完全リンクフリーです。リンクを行う場合の当方への連絡は不要です。<br>
+      </p>
+    </div>
+  </div>
+</Layout>

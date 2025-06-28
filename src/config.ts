@@ -24,6 +24,12 @@ export const HEADER_LINKS: Link[] = [
     name: 'Tags',
     url: '/tags',
   },
+  /* 2025/06/28 add */
+  {
+    name: 'Privacy Policy',
+    url: '/privacy-policy',
+  },
+  /* 2025/06/28 add */
   {
     name: 'About',
     url: '/about',
@@ -51,6 +57,12 @@ export const FOOTER_LINKS: Link[] = [
     name: 'Tags',
     url: '/tags',
   },
+  /* 2025/06/28 add */
+  {
+    name: 'Privacy Policy',
+    url: '/privacy-policy',
+  },
+  /* 2025/06/28 add */
   {
     name: 'About',
     url: '/about',
@@ -217,9 +229,16 @@ export const ProjectList: Project[] = [
   },
 ]
 
-/* 2025/06/22 add */
+/* 2025/06/28 add */
 export const ABOUT_CONFIG = {
   title: 'About',
   description: 'About this blog',
   introduce: 'You can find out more about this blog here.',
+}
+
+/* 2025/06/28 add */
+export const PRIVACYPOLICY_CONFIG = {
+  title: 'Privacy Policy',
+  description: 'Privacy Policy of this blog',
+  introduce: 'You can review this blog\'s privacy policy.',
 }
