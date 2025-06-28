@@ -30,6 +30,13 @@ export default defineConfig({
     rehypePlugins,
   },
 
-  integrations: [sitemap(), robotsTxt(), react(), expressiveCode(), mdx()],
+  integrations: [sitemap(
+    {
+      filter: (page) =>
+        page !== 'https://simp1e-lab.com/privacy-policy/' &&
+        page !== 'https://simp1e-lab.com/about/',
+    } 
+  ), robotsTxt(), react(), expressiveCode(), mdx()],
+
   adapter: netlify(),
 })
