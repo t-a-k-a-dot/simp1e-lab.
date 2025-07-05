@@ -36,85 +36,85 @@ vSphere ESXi はコンシューマーアーキテクチャを認識しておら�
 1. PC に vSphere ESXi のインストールメディアを挿入し、起動する
 
 1. 以下の画面で<b><span style="color: red; ">5秒以内</span></b>に [Shift] + [O] を押下し、 Edit boot options に遷移する  
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000020.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000020.webp)
 
 1. …cdromBoot の後に以下の文字列を入力し、 [Enter] を押下する
     ```shell
     cpuUniformityHardCheckPanic=FALSE
     ```
     ※画面イメージは以下の通り
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000021.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000021.webp)
 
 1. 以下の画面で [Enter] を押下し、インストールを開始する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000024.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000024.webp)
 
 1. 以下の画面で [F11] を押下し、 EULA に同意する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000025.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000025.webp)
 
 1. 以下の画面でインストール先とするディスクを選択した状態で [Enter] を押下する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000027.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000027.webp)
 
 1. キーボードレイアウトに [ Japanese ] を選択した状態で [Enter] を押下する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000028.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000028.webp)
 
 1. 設定したい root パスワードを2度入力し、 [Enter] を押下する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000029.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000029.webp)
 
 1. [F11] を押下し、インストールを続行する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000030.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000030.webp)
 
 1. 以下の画面で [Alt] + [F1] を押下し、 シェルコンソール に遷移する  
     <span style="color: red; ">※[Enter] を押下しない様に注意</span>
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000032.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000032.webp)
 
 1. ESXi Shell で root ユーザーとしてログインする  
     ID：root  
     PW：(Blank)  
     <span style="color: red; ">※パスワードは設定したものではなく、(Blank)</span>
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000035.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000035.webp)
 
 1. 以下のコマンドを入力し、 [Enter] を押下する
     ```shell
     vi /vmfs/volumes/BOOTBANK1/boot.cfg
     ```
     ※vi 操作で **boot.cfg** を変更する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000037.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000037.webp)
 
 1. 6行目の autoPartition=FALSE の後に以下を入力する
     ```shell
     cpuUniformityHardCheckPanic=FALSE
     ```
     `:wq` を入力後、 [Enter] を押下し、変更を上書き保存する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000037.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000037.webp)
 
 1. `exit` を入力後、 [Enter] を押下し、ログアウトする
 
 1. 以下の画面で [Alt] + [F2] を押下し、 DCUI に遷移する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000044.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000044.webp)
 
 1. 以下の画面で [Enter] を押下し、再起動する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000045.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000045.webp)
 
 ## 設定変更手順
 1. DCUI で [F2] を押下する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000047.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000047.webp)
 
 1. 以下の画面で root のログイン情報を入力し、 [Enter] を押下する  
     ID：root  
     PW：<root_password>　※インストール時に指定したパスワード
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000048.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000048.webp)
 
 1. [ Troubleshooting Options ] を選択し、 [Enter] を押下する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000049.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000049.webp)
 
 1. [ Enable ESXi Shell ] を選択し、 [Enter] を押下し、"ESXi Shell is Enabled"に変化したことを確認する  
     [Alt] + [F1] を押下し、シェルコンソール に遷移する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000050.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000050.webp)
 
 1. ESXi Shell で root ユーザーとしてログインする  
     ID：root  
     PW：<root_password>　※インストール時に指定したパスワード
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000053.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000053.webp)
 
 1. 以下のコマンドを順番に実行する
     
@@ -143,16 +143,16 @@ vSphere ESXi はコンシューマーアーキテクチャを認識しておら�
     esxcli system settings kernel list -o ignoreMsrFaults
     ```
     ※以下の画面の通り順番にコマンドを実行する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000065.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000065.webp)
 
 1. `exit` コマンドを実行し、ログアウトする
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000066.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000066.webp)
 
 1. 以下の画面で [Alt] + [F2] を押下し、 DCUI に遷移する
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000044.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000044.webp)
 
 1. [ Disable ESXi Shell ] を選択し、 [Enter] を押下し、"ESXi Shell is Disabled"に変化したことを確認する  
-    ![](/assets/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000069.webp)
+    ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000069.webp)
 
 1. [ESC] を2度押下し、DCUI からログアウトする  
     手順は以上で終了
