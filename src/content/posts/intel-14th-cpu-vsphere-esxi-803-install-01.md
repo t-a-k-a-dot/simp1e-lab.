@@ -95,7 +95,7 @@ vSphere ESXi はコンシューマーアーキテクチャを認識しておら�
 1. 以下の画面で [Enter] を押下し、再起動する
     ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000045.webp)
 
-## 設定変更手順
+## 恒久設定手順
 1. DCUI で [F2] を押下する
     ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000047.webp)
 
@@ -158,8 +158,8 @@ vSphere ESXi はコンシューマーアーキテクチャを認識しておら�
     手順は以上で終了
 
 ## 環境
-* vCenter Serer 8.0.3 ( Build:24022515 )
-* vSphere ESXi 8.0.3 ( Build:24022510 )
+* vCenter Serer 8.0.3 ( Build\:24022515 )
+* vSphere ESXi 8.0.3 ( Build\:24022510 )
 
 ## 今回の対応で参考にしたサイト
 > * [Video of ESXi install workaround for Fatal CPU mismatch on feature for Intel 12th Gen CPUs and newer](https://williamlam.com/2023/01/video-of-esxi-install-workaround-for-fatal-cpu-mismatch-on-feature-for-intel-12th-gen-cpus-and-newer.html)
