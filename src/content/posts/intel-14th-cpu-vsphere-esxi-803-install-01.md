@@ -64,13 +64,17 @@ vSphere ESXi はコンシューマーアーキテクチャを認識しておら�
     ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000030.webp)
 
 1. 以下の画面で [Alt] + [F1] を押下し、 シェルコンソール に遷移する  
-    <span style="color: red; ">※[Enter] を押下しない様に注意</span>
+    > [!CAUTION]
+    > [Enter] を押下しない様に注意
+
     ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000032.webp)
 
 1. ESXi Shell で root ユーザーとしてログインする  
     ID：root  
     PW：(Blank)  
-    <span style="color: red; ">※パスワードは設定したものではなく、(Blank)</span>
+    > [!NOTE]
+    > パスワードは設定したものではなく、(Blank)
+
     ![](/images/intel-14th-cpu-vsphere-esxi-803-install-01/ws000035.webp)
 
 1. 以下のコマンドを入力し、 [Enter] を押下する

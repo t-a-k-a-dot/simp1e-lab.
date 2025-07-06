@@ -1,6 +1,6 @@
 ---
 title: 'VMware Remote Console から仮想マシンに接続できない問題のトラブルシューティング'
-description: '自宅ラボで VMware Remote Console から仮想マシンに接続できない問題が起きた時の簡単なトラブルシューティングした時のメモ。'
+description: '自宅ラボで VMware Remote Console から仮想マシンに接続できない時に簡単なトラブルシューティングをした時のメモ。'
 pubDate: 2025-07-06
 tags: ['vSphere ESXi']
 ---
