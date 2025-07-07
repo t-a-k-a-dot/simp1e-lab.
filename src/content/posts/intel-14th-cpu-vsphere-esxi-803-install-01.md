@@ -1,6 +1,6 @@
 ---
-title: 'Intel 14th CPU (Raptor Lake-S Refresh) を搭載する PC に vSphere ESXi 8.0U3 をインストール'
-description: '自宅ラボの Intel 14th CPU (Raptor Lake-S Refresh) を搭載する PC に vSphere ESXi 8.0U3 をインストールする。'
+title: 'Intel 14th CPU (Raptor Lake-S Refresh) を搭載する PC に vSphere ESXi 8.0 U3 をインストール'
+description: '自宅ラボの Intel 14th CPU (Raptor Lake-S Refresh) を搭載する PC に vSphere ESXi 8.0 U3 をインストールする。'
 pubDate: 2025-07-05
 tags: ['vSphere ESXi']
 ---
