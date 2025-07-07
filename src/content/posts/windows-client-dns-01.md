@@ -57,7 +57,7 @@ Windows クライアントは自宅ラボ以外の用途にも利用している
     ```powershell
     Get-DnsClientNrptRule
     ```
-    ___
+    ```
     Name                             : {1C135080-49E5-432B-912E-567095F6FD67}  
     Version                          : 2  
     Namespace                        : {.lab.local}  
@@ -76,7 +76,7 @@ Windows クライアントは自宅ラボ以外の用途にも利用している
     NameEncoding                     : Disable  
     DisplayName                      :  
     Comment                          :  
-    ___
+    ```
     <br>
   
 1. PowerShell にて以下のコマンドを実行し、設定を削除する  
@@ -94,7 +94,7 @@ Windows クライアントは自宅ラボ以外の用途にも利用している
 
 
 1. 以下の確認メッセージが表示されるため、 `Y` を入力し、 [ENTER] を押下  
-    ___
+    ```
     確認  
     名前空間 .lab.local の NRPT ルールを削除します。各値は次のとおりです  
     DAEnable: 無効  
@@ -103,7 +103,7 @@ Windows クライアントは自宅ラボ以外の用途にも利用している
     NameServers: 192.168.1.200  
     続行しますか?  
     [Y] はい(Y)  [N] いいえ(N)  [S] 中断(S)  [?] ヘルプ (既定値は "Y"):  
-    ___
+    ```
     <br>
 
 1. PowerShell にて以下のコマンドを実行し、設定が削除されていることを確認する  
